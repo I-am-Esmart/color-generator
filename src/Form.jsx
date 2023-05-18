@@ -10,9 +10,9 @@ const Form = ({ addColor }) => {
 
   return (
     <div className="big-container">
-      <h1>color generator</h1>
+      <h3 style={{ color: color }}>color generator</h3>
       <section className="container">
-        <h4>choose a color from this box</h4>
+        <p style={{ color: color }}>select a color from the box</p>
         <form className="color-form" onSubmit={handleSubmit}>
           <input
             type="color"

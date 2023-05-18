@@ -5,11 +5,11 @@ import Values from "values.js"
 import { ToastContainer, toast } from "react-toastify"
 
 function App() {
-  const [colors, setColors] = useState(new Values("#543bba").all(2))
+  const [colors, setColors] = useState(new Values("#543bba").all(5))
 
   const addColor = (color) => {
     try {
-      const newColors = new Values(color).all(2)
+      const newColors = new Values(color).all(5)
       setColors(newColors)
     } catch (error) {
       toast.error(error.message)
